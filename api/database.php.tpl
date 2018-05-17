@@ -1,18 +1,12 @@
 <?php
 class Database{
-/*
-   private $host = "mysqlinstance.c1ls9liw8pr7.us-west-2.rds.amazonaws.com";
-   private $db_name = "dbname";
-   private $username = "mydbusername";
-   private $password = "mydbpassword";
-*/
-    private $host = "floatpredictorinstance.clkirumppz4x.eu-central-1.rds.amazonaws.com";
-    private $db_name = "floatpredictor";
-    private $username = "floatpredictor";
-    private $password = 'U8$LhsZkz1EmgGjH';
+    private $host = "db_host";
+    private $db_name = "db_name";
+    private $username = "username";
+    private $password = 'password';
     public $conn;
 
-    public $table_name = "EXPLORERTRAJECTORIES";
+    public $table_name = "table_name";
 
     public function getConnection(){
       $this->conn = null;

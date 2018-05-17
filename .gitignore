@@ -3,3 +3,6 @@ OSs
 
 IDE
 .idea
+
+Database
+/api/database.php
