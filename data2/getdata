@@ -1,0 +1,11 @@
+#!/bin/sh
+cd $HOME/public_html/met/data2
+date -u
+d=`date -u +%Y%m%d`
+python getdatanomads2.py $d $1 || { echo gfs err;exit 1; }
+
+cp -rp gfs.time gfs-* ..
+
+. $HOME/public_html/gfs/generate_wind_data.sh
+date -u
+# 10.5 +   + 5
