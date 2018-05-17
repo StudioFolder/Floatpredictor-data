@@ -6,3 +6,5 @@ IDE
 
 Database
 /api/database.php
+/api/createtable.php
+/api/drop.php
