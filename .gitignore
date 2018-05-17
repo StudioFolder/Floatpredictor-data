@@ -1,10 +1,10 @@
-OSs
+# OSs
 .DS_Store
 
-IDE
+# IDE
 .idea
 
-Database
+# Database
 /api/database.php
 /api/createtable.php
 /api/drop.php
