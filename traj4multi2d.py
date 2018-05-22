@@ -3,7 +3,7 @@
 # python traj4multi2d.py 0 250 48.85 2.35 42.36,-71.06,42.36,-71.06,42.36,-71.06,42.36,-71.06,42.36,-71.06,42.36,-71.06,42.36,-71.06,42.36,-71.06,
 import numpy as np
 import sys
-# import datetime
+#import datetime
 
 pi=np.pi
 degrad=pi/180.0

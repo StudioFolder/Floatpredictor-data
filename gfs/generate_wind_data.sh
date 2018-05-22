@@ -11,4 +11,5 @@ mkdir data/850
 mkdir data/1000
 python wind_data_download.py || { echo 'exit';exit 1; }
 rm -rf ../data
+cp -fR data ~/public_html/static/data/gfs/
 mv data ../
