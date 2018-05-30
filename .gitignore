@@ -4,7 +4,17 @@
 # IDE
 .idea
 
+# deploy
+deploy
+
+# gfs data
+gfs-*
+
+# tmp grib file
+tmp.grib2
+
 # Database
 /api/database.php
+/api/database_old.php
 /api/createtable.php
 /api/drop.php
