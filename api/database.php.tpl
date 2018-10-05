@@ -58,7 +58,7 @@ class Database{
         destination_latitude  REAL,
         created               TIMESTAMP,
         email                 VARCHAR(50),
-        username              VARCHAR(50),
+        ip              VARCHAR(50),
         PRIMARY KEY (id))
         ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
 EOF;

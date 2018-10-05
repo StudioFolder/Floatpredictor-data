@@ -72,7 +72,7 @@ try{
             )
           ),
           // "email"  => $email,
-          // "username"  => $username,
+          // "ip"  => $ip,
 
         );
         if($destination_city != NULL) {

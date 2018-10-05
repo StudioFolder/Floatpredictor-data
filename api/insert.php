@@ -1,4 +1,6 @@
 <?php
+
+$ip=strval($_SERVER['HTTP_X_FORWARDED_FOR']);//strval($_SERVER['REMOTE_ADDR']);
 // required headers
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
@@ -57,7 +59,7 @@ function toSVG($svg_data, $color, $id){
 
 
 try{
-  $result=$flight ->create($data);
+  $result=$flight ->create($data, $ip);
   if($result){
     $webColors = ['#003769', '#2e6a9c', '#0095d7', '#587a98', '#7eafd4', '#b9e5fb', '#656868', '#ffffff'];
     toSVG($data['svg'],$webColors[intval($data['explorerIndex'])], $result);

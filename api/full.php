@@ -70,10 +70,9 @@ try{
               "longitude" => floatval ($departure_longitude)
             )
           ),
+          "email"  => $email,
+          "ip"  => $ip,
           "path" => json_decode($path),
-          // "email"  => $email,
-          // "ip"  => $ip,
-
         );
         if($destination_city != NULL) {
         	$product_item["destination"] = array(
