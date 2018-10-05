@@ -3,6 +3,8 @@
 This script needs:
 https://github.com/mailgun/mailgun-php
 https://github.com/drewm/mailchimp-api
+
+apt-get php-imagick librsvg2-bin libmagickcore-dev php7.0-curl
 */
 
 require 'vendor/autoload.php';
