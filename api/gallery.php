@@ -46,6 +46,9 @@ try{
     if($num>0){
       while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
         extract($row);
+        if($departure_city == 'undefined' && $departure_country != 'undefined'){
+          $departure_city = $departure_country;
+        }
         $product_item=array(
           "id" => $id,
           "departure_date"  => $departure_date,
@@ -69,6 +72,9 @@ try{
 
         );
         if($destination_city != NULL) {
+          if($destination_city == 'undefined' && $destination_country != 'undefined'){
+            $destination_city = $destination_country;
+          }
         	$product_item["destination"] = array(
             "city" => $destination_city,
             "country" => $destination_country,
